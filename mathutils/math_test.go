@@ -30,3 +30,21 @@ func TestPowPositive(t *testing.T) {
 		t.Fail()
 	}
 }
+func TestNegativePowOdd(t *testing.T) {
+	n, err := Pow(-1, 3)
+	if err != nil {
+		t.Fail()
+	}
+	if n != -1 {
+		t.Fail()
+	}
+}
+unc TestNegativePowEven(t *testing.T) {
+	n, err := Pow(-1, 12)
+	if err != nil {
+		t.Fail()
+	}
+	if n != 1 {
+		t.Fail()
+	}
+}
