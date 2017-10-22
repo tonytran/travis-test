@@ -22,6 +22,10 @@ func main() {
 			fmt.Println("No negative numbers!")
 			continue
 		}
+		if n == 12 {
+			fmt.Println("YOU HIT THE JACKPOT!~")
+			os.Exit(0)
+		}
 		fmt.Printf("2^%d = %d\n", n, pow)
 	}
 }
