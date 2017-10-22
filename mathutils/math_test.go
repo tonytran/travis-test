@@ -30,3 +30,7 @@ func TestPowPositive(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestFail(t *testing.T) {
+	t.Error("This test should fail.")
+}
